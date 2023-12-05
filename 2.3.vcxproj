@@ -128,6 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2.3.cpp" />
+    <ClCompile Include="Avto.cpp" />
+    <ClCompile Include="Disp.cpp" />
+    <ClCompile Include="Driver.cpp" />
+    <ClCompile Include="Route.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Avto.h" />
+    <ClInclude Include="Disp.h" />
+    <ClInclude Include="Driver.h" />
+    <ClInclude Include="Route.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
