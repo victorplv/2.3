@@ -15,11 +15,12 @@ class Disp{
 class Avto{
 	-bool operability
 	-int id
+	-CarCard
+}
 class CarCard{
   -look
   -type
   -mark
-}
 }
 }
 classRoute o-- classDriver
