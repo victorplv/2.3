@@ -21,7 +21,7 @@ class CarCard{
   -mark
 }
 }
-
+}
 classRoute o-- classDriver
 classRoute o-- classDisp
 classRoute o-- classAvto
