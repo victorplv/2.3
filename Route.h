@@ -4,13 +4,14 @@
 #include"Disp.h"
 
 class Route {
+	friend	void ScoreTrip(Route&, int);
 private:
 	bool status;
 	int end;
+public:
 	Disp disp;
 	Avto avto;
 	Driver driver;
-public:
 	Route() {
 		status = false;
 		end = 0;
@@ -21,6 +22,23 @@ public:
 		disp = Disp(id_disp, st_disp);
 		avto = Avto();
 		driver = Driver(driver_d, id_driver);
+	}
+	Route operator+(const Route& route1) 
+	{
+		Route route;
+		route.end = this->end + route1.end;
+		return route;
+	}
+	Route& operator++()
+	{
+		this->end += 1;
+		return *this;
+	}
+	Route& operator++(int value)
+	{
+		Route route(*this);
+		this->end += 1;
+		return route;
 	}
 	void SetStatus(bool status);
 	void SetEnd(int end);

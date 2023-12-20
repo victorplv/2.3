@@ -9,6 +9,7 @@ private:
 	int car_id;
 	bool operability;
 
+public:
 	class CarCard {
 	private:
 		int look;
@@ -25,12 +26,20 @@ private:
 			this->mark = mark;
 			this->type = type;
 		}
-		void GetLook();
-		void GetMark();
-		void GetType();
+		void SetMark(string mark)
+		{
+			this->mark = mark;
+		}
+		void GetMark()
+		{
+			cout << "марка " << mark << endl;
+		}
+		string Poisk()
+		{
+			return mark;
+		}
 	};
 	CarCard card;
-public:
 	Avto() {
 		this->car_id = 0;
 		this->operability = false;
@@ -40,11 +49,10 @@ public:
 		this->operability = true;
 		this->card = CarCard(10, "седан", "лада");
 	}
-	void GetLook();
-	void GetMark();
-	void GetType();
 	void SetCarID(int car_id);
 	void SetOper(bool oper);
 	void GetCarId();
 	void GetOper();
+	
+
 };

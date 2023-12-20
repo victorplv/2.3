@@ -1,7 +1,6 @@
 #include<iostream>
 #include"Route.h"
 
-
 using namespace std;
 
 void Route::SetStatus(bool status) {
