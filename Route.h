@@ -6,6 +6,7 @@
 class Route {
 	friend	void ScoreTrip(Route&, int);
 private:
+	static int Wheels;
 	bool status;
 	int end;
 public:
@@ -39,6 +40,14 @@ public:
 		Route route(*this);
 		this->end += 1;
 		return route;
+	}
+	static void SetWheel(int wheel) 
+	{
+		Wheels = 4;
+	}
+	static int GetWheel() 
+	{
+		cout << "Машина без 4х колес - не машина" << endl;
 	}
 	void SetStatus(bool status);
 	void SetEnd(int end);
