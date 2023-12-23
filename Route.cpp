@@ -13,8 +13,8 @@ void Route::GetStatus() {
 	if (status) cout << "поезда в процессе " << endl;
 	else cout << "Поездка не назначена" << endl;
 }
-void Route::GetEnd(){
-	cout << "Оценка поездки " << end << endl;
+int Route::GetEnd(){
+	return end;
 }
 void Route::Print() {
 	Route::GetStatus();

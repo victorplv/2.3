@@ -52,7 +52,7 @@ public:
 	void SetStatus(bool status);
 	void SetEnd(int end);
 	void GetStatus();
-	void GetEnd();
+	int GetEnd();
 	void Print();
 	void BanDriver();
 	void RepaierCar();
