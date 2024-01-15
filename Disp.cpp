@@ -15,3 +15,11 @@ void Disp::GetId()
 void Disp::GetSt() {
 	cout << "Номер диспетчера " << status_d << endl;
 }
+void Disp::Print()
+{
+	cout << "Я диспетчер, мой id: " << id_d << endl;
+}
+void GlavDisp::Print()
+{
+	cout << "Я главный диспетчер"<< endl;
+}

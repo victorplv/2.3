@@ -2,6 +2,8 @@
 #include "Avto.h"
 #include "Driver.h"
 #include"Disp.h"
+#include"Road.h"
+#include"Cash.h"
 
 class Route {
 	friend	void ScoreTrip(Route&, int);
@@ -13,6 +15,12 @@ public:
 	Disp disp;
 	Avto avto;
 	Driver driver;
+	GlavDisp D;
+	Urban road1;
+	NotUrban road2;
+	Cash<string> cash;
+
+
 	Route() {
 		status = false;
 		end = 0;
@@ -23,6 +31,7 @@ public:
 		disp = Disp(id_disp, st_disp);
 		avto = Avto();
 		driver = Driver(driver_d, id_driver);
+	
 	}
 	Route operator+(const Route& route1) 
 	{
@@ -56,4 +65,5 @@ public:
 	void Print();
 	void BanDriver();
 	void RepaierCar();
+
 };

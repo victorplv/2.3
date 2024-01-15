@@ -129,14 +129,18 @@
   <ItemGroup>
     <ClCompile Include="2.3.cpp" />
     <ClCompile Include="Avto.cpp" />
+    <ClCompile Include="Cash.cpp" />
     <ClCompile Include="Disp.cpp" />
     <ClCompile Include="Driver.cpp" />
+    <ClCompile Include="Road.cpp" />
     <ClCompile Include="Route.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Avto.h" />
+    <ClInclude Include="Cash.h" />
     <ClInclude Include="Disp.h" />
     <ClInclude Include="Driver.h" />
+    <ClInclude Include="Road.h" />
     <ClInclude Include="Route.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
